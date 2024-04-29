@@ -2,6 +2,7 @@ import sys
 import networkx as nx
 from graph_parser import get_matrix
 from colorama import Back
+import tkinter as tk
 
 
 def get_argv():
@@ -30,14 +31,27 @@ def check_planarity():
 
         faces = edges - nodes + 2
 
-        print(Back.GREEN + f"The graph is planar and it has {faces} faces")
+        text = tk.Label(
+            root, text=f"The graph is planar and it has {faces} faces", bg="GREEN", font=("TkDefaultFont", 60))
+        text.pack()
 
     else:
-        print(Back.RED + "The graph is not planar")
+        text = tk.Label(
+            root, text=f"The graph is not planar", bg="RED", font=("TkDefaultFont", 60))
+        text.pack()
 
 
 def main():
+    global root
+    root = tk.Tk()
+    root.title("Formula di Eulero")
+    root.update_idletasks()
+    root.geometry(
+        f"{root.winfo_screenwidth()}x180+1+{int(root.winfo_screenheight()*0.70)}")
+
     check_planarity()
+
+    root.mainloop()
 
 
 if __name__ == "__main__":
