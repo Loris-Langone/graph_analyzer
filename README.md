@@ -2,7 +2,7 @@
 
 ## Introduzione
 
-Questo script Python analizza un grafo fornito in un file XMGL per determinare se è planare o meno. Utilizza la libreria `networkx` per le operazioni sui grafi e un parser di grafi personalizzato per analizzare il file.
+Questo script Python analizza un grafo fornito in un file XGML per determinare se è planare o meno. Utilizza la libreria `networkx` per le operazioni sui grafi e un parser di grafi personalizzato per analizzare il file.
 
 ## Utilizzo
 
@@ -29,7 +29,7 @@ Lo script esegue i seguenti passaggi:
 
 3. Recupera il nome del file fornito come argomento dalla riga di comando.
 
-4. Utilizza il parser del grafo per estrarre una matrice di adiacenza dal file XML specificato.
+4. Utilizza il parser del grafo per estrarre una matrice di adiacenza dal file XGML specificato.
 
 5. Utilizza la libreria `networkx` per creare un grafo a partire dalla matrice di adiacenza.
 
@@ -41,7 +41,7 @@ Lo script esegue i seguenti passaggi:
 
 ## Nota
 
-- Assicurati che il file XML sia formattato correttamente e contenga informazioni valide sul grafo.
-- Il corretto funzionamento dello script dipende dalla corretta formattazione e struttura del file XML di input.
+- Assicurati che il file XGML sia formattato correttamente e contenga informazioni valide sul grafo.
+- Il corretto funzionamento dello script dipende dalla corretta formattazione e struttura del file XGML di input.
 
 Segui queste istruzioni per eseguire correttamente lo script e interpretare i suoi risultati. Fammi sapere se hai altre domande!
